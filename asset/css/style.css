@@ -7,6 +7,10 @@
 }
 .btn_orange{
     background-color: orangered;
+    border: 2px solid transparent;
+}
+.btn-primary{
+    border: 2px solid transparent;
 }
 /* Effetti Hover */
 .btn_orange:hover{
@@ -14,16 +18,12 @@
     box-shadow: 0 0 0 2px orangered!important;
 }
 .btn-primary:hover{
-    border: 1px solid white;
+    border: 2px solid white;
     box-shadow: 0 0 0 2px #0d6efd!important;
 }
-/* Header */
 
 /* Header */
-header{
-    position: sticky;
-    top: 0;
-}
+
 /* Section 1 Jumbo */
 section:nth-of-type(1){
     height: 85vh;
@@ -33,6 +33,26 @@ section:nth-of-type(1){
 }
 
 /* Section 2 Card */
+.line-card{
+    width: 100%;
+    height: 5px;
+    opacity: 0;
+    display: none;
+    background-color: #0d6efd;
+}
+section:nth-of-type(2) img{
+    border: 3px solid transparent;
+}
+section:nth-of-type(2) div > div > img:hover{
+    transform: translateY(-1rem);
+    opacity: 1 !important;
+    box-shadow: 0 0 0 2px #0d6efd!important;
+}
+section:nth-of-type(2) div > div > img:hover section:nth-of-type(2) div > div > img:not(:hover){
+    opacity: 0.25 !important;
+}
+
+
 
 /* Section 3 Play Has No Limit */
 
