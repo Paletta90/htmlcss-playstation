@@ -6,28 +6,49 @@
 .border_radius-25px {
     border-radius: 25px;
 }
-
+/* Modifiche dei bottoni */
 .btn_orange {
     background-color: orangered;
     border: 2px solid transparent;
 }
-
+.btn-dark{
+    border: 2px solid transparent;
+}
 .btn-primary {
     border: 2px solid transparent;
 }
 
-/* Effetti Hover */
+/* Effetti Hover sui bottoni */
 .btn_orange:hover {
     border: 2px solid black;
     box-shadow: 0 0 0 2px orangered !important;
 }
-
+.btn-dark:hover{
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px black !important;
+}
 .btn-primary:hover {
     border: 2px solid white;
     box-shadow: 0 0 0 2px #0d6efd !important;
 }
 
 /* Header */
+header .nav-link {
+    padding-right: 0 !important;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+header li{
+    cursor: pointer;
+}
+header li a{
+    color: black !important;
+}
+header li:hover a,
+header li:hover i{
+    color: #0d6efd !important;
+}
 
 /* Section 1 Jumbo */
 section:nth-of-type(1) {
@@ -42,17 +63,16 @@ section:nth-of-type(2) img {
     opacity: 0.75;
     border: 3px solid transparent;
 }
-
-section:nth-of-type(2) div>div>img:hover {
+/* Effetto hover sulla singola img */
+section:nth-of-type(2) div > div > div:hover img{
     transform: translateY(-1rem);
-    opacity: 1;
+    opacity: 1 !important;
     box-shadow: 0 0 0 2px #0d6efd;
 }
-
-section:nth-of-type(2) div>div>img:hover img:not(:hover) {
-    opacity: 0.25 !important;
+/* Effetto hover su tutte le immagini */
+section:nth-of-type(2) .row:hover img{
+    opacity: 0.25;
 }
-
 
 
 /* Section 3 Play Has No Limit */
@@ -61,8 +81,18 @@ section:nth-of-type(2) div>div>img:hover img:not(:hover) {
     height: 5px;
     opacity: 0;
     background-color: #0d6efd;
-    align-self: flex-end;
 }
-section:nth-of-type(3) div > div > div:hover .line-card{
-    opacity: 1;
+section:nth-of-type(3) div > div:nth-of-type(2) > div div:nth-of-type(1){
+    opacity: 0.5;
 }
+section:nth-of-type(3) div > div:nth-of-type(2) > div:hover div{
+    opacity: 1 !important;
+}
+
+/* Section 4 It Takes Two */
+section:nth-of-type(4){
+    height: 85vh;
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+} 
