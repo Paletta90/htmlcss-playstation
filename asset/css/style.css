@@ -1,10 +1,9 @@
 /* Utility */
-.border_radius-50px {
-    border-radius: 50px;
-}
-
 .border_radius-25px {
     border-radius: 25px;
+}
+.bg-section{
+    background-color: #1f1f1f;
 }
 /* Modifiche dei bottoni */
 .btn_orange {
@@ -56,6 +55,7 @@ section:nth-of-type(1) {
     background-image: url("../img/jumbo-bg.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Section 2 Card */
@@ -82,9 +82,11 @@ section:nth-of-type(2) .row:hover img{
     opacity: 0;
     background-color: #0d6efd;
 }
+/* Do opacità a tutte le card */
 section:nth-of-type(3) div > div:nth-of-type(2) > div div:nth-of-type(1){
     opacity: 0.5;
 }
+/* Evidenzio la singola card selezionata */
 section:nth-of-type(3) div > div:nth-of-type(2) > div:hover div{
     opacity: 1 !important;
 }
@@ -96,3 +98,11 @@ section:nth-of-type(4){
     background-size: cover;
     background-position: center;
 } 
+
+/* Section 5 Nuove Uscite */
+section:nth-of-type(5) img{
+    opacity: 0.75;
+}
+section:nth-of-type(5) div > div > div:hover img{
+    opacity: 1;
+}
