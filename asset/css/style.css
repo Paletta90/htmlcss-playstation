@@ -5,15 +5,17 @@
 .bg-section{
     background-color: #1f1f1f;
 }
+.bg-grey{
+    background-color: #bebcbb;
+}
 /* Modifiche dei bottoni */
 .btn_orange {
     background-color: orangered;
-    border: 2px solid transparent;
 }
-.btn-dark{
-    border: 2px solid transparent;
-}
-.btn-primary {
+.btn_orange,
+.btn-dark,
+.btn-primary,
+.btn-light{
     border: 2px solid transparent;
 }
 
@@ -29,6 +31,9 @@
 .btn-primary:hover {
     border: 2px solid white;
     box-shadow: 0 0 0 2px #0d6efd !important;
+}
+.btn-light:hover{
+    box-shadow: 0 0 0 5px rgba(193,197,200,.9)!important;
 }
 
 /* Header */
@@ -105,4 +110,12 @@ section:nth-of-type(5) img{
 }
 section:nth-of-type(5) div > div > div:hover img{
     opacity: 1;
+}
+
+/* Section 7 Playstation Plus */
+section:nth-of-type(7) > div > div > div:nth-of-type(2){
+    background-image: url("../img/ps-plus-april-monthly-games-featured-image-block.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
